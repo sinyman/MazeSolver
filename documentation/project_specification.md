@@ -24,8 +24,9 @@ In addition to arrays, primitives and strings, a priority queue is necessary in 
 
 ## Program I/O
 ### Input:
-A JSON file in the same directory as the program is run from
- * Either the project root or the folder in which a possible .jar-file is run from
+A JSON file in the same directory as the program is run from either:
+* Project root
+* The folder in which a possible .jar-file is run from
  
 ### Output:
 The original maze with a route mapped out on it in the terminal window
