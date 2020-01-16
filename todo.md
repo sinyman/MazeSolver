@@ -13,3 +13,4 @@
 - [X] Enable adding issues to your repository for code reviews. enabling issues
 - [X] Register to Labtool
 - [ ] Read up on [RMQ and testing(JUnit, etc)](https://github.com/TiraLabra/Testing-and-rmq)
+- [ ] Initial coding(Read JSON file, Create Node class, parse maze -> graph)
