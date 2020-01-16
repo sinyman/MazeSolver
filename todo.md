@@ -14,5 +14,5 @@
 	If you need help with Markdown you can check this guide, ask for help from the course assistant or just look at the source code for this file!
 - [X] Project: Project has been created.
 - [X] Enable adding issues to your repository for code reviews. enabling issues
-- [X] Register to Labtool: https://study.cs.helsinki.fi/labtool/
+- [X] Register to Labtool
 - [ ] Read up on [RMQ andtesting(JUnit, )](https://github.com/TiraLabra/Testing-and-rmq)
