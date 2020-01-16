@@ -8,4 +8,4 @@ I will be implementing an ASCII-art maze solver in Java. The program will read a
 * [Project specifiation](./documentation/project_specification.md)
 * [Timekeeping table](./documentation/timekeeping.md)
 ### Weekly reports
-* [Weekly report 1](./documentation/Weekly\ Reports/weekly_rep1.md)
+* [Weekly report 1](https://github.com/sinyman/MazeSolver/blob/master/documentation/Weekly%20Reports/weekly_rep1.md)
