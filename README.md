@@ -6,6 +6,6 @@ I will be implementing an ASCII-art maze solver in Java. The program will read a
 
 ## Documentation
 * [Project specifiation](./documentation/project_specification.md)
-
+* [Timekeeping table](./documentation/timekeeping.md)
 ### Weekly reports
 
