@@ -1,12 +1,12 @@
 # Weekly report 1
-## What's been done?
+### What's been done?
 
-## How has the project progressed?
+### How has the project progressed?
 
-## What have I learned?
+### What have I learned?
 
-## Problems?
+### Problems?
 
-## What am I to do in week 2?
+### What am I to do in week 2?
 
 
