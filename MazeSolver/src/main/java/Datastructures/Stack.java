@@ -14,8 +14,7 @@ public class Stack {
      * Initializes a new Stack-object with 10 empty spots
     */
     public Stack() {
-        // OBS OBS OBS 'Set init array size to 10' OBS OBS OBS
-        this.stack = new Node[0];
+        this.stack = new Node[10];
         top = -1;
     }
     
