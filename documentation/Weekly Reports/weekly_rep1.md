@@ -19,4 +19,6 @@
 * Documentation:
     * Plan project/code structure better
     * Ideally, if a good part of the coding is done, write a usage guide
+   
+[Link to timekeeping table](../timekeeping.md)
 
