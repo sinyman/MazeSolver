@@ -9,7 +9,6 @@
 
 ### What have I learned?
 * Learned about different maze solving algorithms
-* 
 ### Problems?
 * Not quite sure what is considered a good project scope
 * Should I be focusing more on the maze solving algorithms?
