@@ -3,10 +3,10 @@
 ## Week 1
 - [X] Topic
 - [X] Programming language
-- [ ] Sense of project scope.
+- [X] Sense of project scope.
 - [X] Consulted with assistance about project scope
 - [X] Familiarize yourself with the course material. Especially the documentation instructions.
-- [ ] Documentation: Project specification done
+- [X] Documentation: Project specification done
 - [ ] First weekly report is done
 - [X] Weekly report & project specification on frontpage
 - [X] Project: Project has been created.
