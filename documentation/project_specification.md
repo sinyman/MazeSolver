@@ -1,6 +1,6 @@
 # Project Specification
 Because input will be in the form of ASCII-strings in a JSON file, I feel that a command line interface
-will be sufficient for operating the program.
+will be sufficient for operating the program. If I have time at the end of the course I may implement a GUI for showing the path through the mazes.
 
 ## Datastructures used
 As specified in the course details, I will only be using arrays, primitive types and strings.
