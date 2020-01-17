@@ -16,6 +16,8 @@
 * Finalize project scope
 * A lot of coding(Finalize Node-class in order to create a graph, etc)
 * Read up on testing
+* Update pom.xml
+   * Add testing, JaCoCo and checkstyle
 * Documentation:
     * Plan project/code structure better
     * Ideally, if a good part of the coding is done, write a usage guide
