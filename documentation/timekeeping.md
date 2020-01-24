@@ -3,9 +3,9 @@ This will be used to keep track of my time spent on the project
 
 |Date|What's been done                                               |Time used|
 |----|---------------------------------------------------------------|---------|
-|14.1|W1:Created repo and initial project spec                       |   1,5h  |
-|15.1|W1:Created java project and updated documentation              |    2h   |
-|16.1|W1:Updated document and directory structure                    |   0,5h  |
-|16.1|W1:Updated document and directory structure                    |    6h   |
-|23.1|W2: Clearing upp project structure and scope                   |    1h   |
-|24.1|W2: Project documentation, plugins and reading up on tools     |    5h   |
+|14.1|Created repo and initial project spec                          |   1,5h  |
+|15.1|Created java project and updated documentation                 |    2h   |
+|16.1|Updated document and directory structure                       |   0,5h  |
+|17.1|Updated document and directory structure                       |    6h   |
+|23.1|Clearing upp project structure and scope                       |    1h   |
+|24.1|Mostly reading up on tools, but also documentationand plugins  |    5h   |
