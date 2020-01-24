@@ -1,4 +1,5 @@
 /MazeSolver/target/
+.DS_Store
 
 # This part is a template gitignore taken from GitHub
 # URL: https://github.com/github/gitignore/blob/master/Maven.gitignore

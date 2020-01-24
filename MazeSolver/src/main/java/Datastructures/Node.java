@@ -5,6 +5,5 @@ package Datastructures;
  *
  * @author Simon
  */
-public class Node {
-    
+public class Node {  
 }
