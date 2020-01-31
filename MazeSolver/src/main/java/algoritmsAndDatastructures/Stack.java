@@ -2,12 +2,12 @@
 package algoritmsAndDatastructures;
 
 /**
- *
+ * Classic Stack datastructure
  * @author Simon
  */
 public class Stack {
-    Node[] stack;
-    int top;
+    private Node[] stack;
+    private int top;
     
     /**
      * <b>Constructor</b>
@@ -20,12 +20,10 @@ public class Stack {
     
     /**
      * <b>Push a new object into the stack</b>
-     * 
      * @param newNode The node to be added to the stack
      * @return Boolean value based on whether the action was successful or not
      */
-    public boolean push(Node newNode) {
-        
+    public boolean push(final Node newNode) {
         boolean con = true;
         while(con) {
             try {
@@ -38,7 +36,7 @@ public class Stack {
                 // Reverts stack top index change after insertion failed
                 // to avoid leaving an empty index between the old and 'new' stack
                 top--;
-                extendStack();
+                extendStack(10);
             }
         }
         return true;
@@ -46,7 +44,6 @@ public class Stack {
     
     /**
      * <b>Removes the topmost node and returns it</b>
-     * 
      * @return Node, null if stack is empty
      */
     public Node pop() {
@@ -59,7 +56,6 @@ public class Stack {
     
     /**
      * <b>Check the object at the top of the stack</b>
-     * 
      * @return Node, null if stack is empty
      */
     public Node peek() {
@@ -68,7 +64,6 @@ public class Stack {
     
     /**
      * <b>Returns the amount of elements in stack</b>
-     * 
      * @return int
      */
     public int size() {
@@ -78,16 +73,15 @@ public class Stack {
     
     /**
      * <b>Checks if the stack is empty</b>
-     * 
      * @return Boolean
      */
     public boolean isEmpty() {
         return top < 0;
     }
     
-    private void extendStack() {
-        Node[] newStack = new Node[stack.length + 10];
-        for(int i = 0; i < stack.length; i++) {
+    private void extendStack(int amount) {
+        Node[] newStack = new Node[stack.length + amount];
+        for (int i = 0; i < stack.length; i++) {
             newStack[i] = stack[i];
         }
         this.stack = newStack;

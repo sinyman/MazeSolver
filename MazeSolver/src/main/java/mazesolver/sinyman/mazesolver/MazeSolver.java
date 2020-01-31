@@ -14,9 +14,9 @@ public class MazeSolver {
     public static void main(String[] args) {
         System.out.println("---Welcome to MazeSolver---\n");
         MazeFactory mf = new MazeFactory();
-        /*
+        
         boolean con = true;
-        String input = "";
+        String input;
         while (con) {
             System.out.println(""
                 + "***********************************\n"
@@ -27,32 +27,35 @@ public class MazeSolver {
                 + "***********************************\n");
 
             input = takeInput();
-            switch (input) {
-                case "1":
-                    System.out.println("Loading maze!");
-                    break;
-                case "2":
-                    System.out.println("Printing maze!");
-                    break;
-                case "3":
-                    System.out.println("Exiting!");
-                    con = false;
-                    break;
-                default: System.out.println("Please input according to actions");
-            }        
+            con = handleInput(input);       
         }
-        */
     }
     
     private static String takeInput() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = "";
-        try {
+        try {System.out.print("Action: ");
             input = br.readLine();
         } catch (IOException ioe) {
             System.out.println("There was an error reading the input, please try again");
         }
         
         return input;
+    }
+    
+    private static boolean handleInput(String input) {
+        switch (input) {
+            case "1":
+                System.out.println("Loading maze!");
+                break;
+            case "2":
+                System.out.println("Printing maze!");
+                break;
+            case "3":
+                System.out.println("Exiting!");
+                return false;
+            default: System.out.println("Please input according to actions");
+        }
+        return true;
     }
 }

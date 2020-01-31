@@ -6,6 +6,7 @@ package algoritmsAndDatastructures;
  * 
  * @author Simon
  */
+
 public class Node {
     private boolean isStart;
     private boolean isGoal;
