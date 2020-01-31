@@ -28,6 +28,7 @@ public class Node {
         //isStart
         pos[0] = x;
         pos[1] = y;
+        visited = false;
     }
     
     public int getX() {
