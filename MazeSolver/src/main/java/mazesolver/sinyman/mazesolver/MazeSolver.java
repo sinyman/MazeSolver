@@ -17,12 +17,12 @@ public class MazeSolver {
         boolean con = true;
         while (con) {
             System.out.println(""
-                + "**********************************\n"
-                + "*  Available actions              \n"
-                + "*  1. Load a maze                 \n"
-                + "*  2. Print loaded maze           \n"
-                + "*  3. Exit                        \n"
-                + "**********************************\n");
+                + "***********************************\n"
+                + "*  Available actions              *\n"
+                + "*  1. Load a maze                 *\n"
+                + "*  2. Print loaded maze           *\n"
+                + "*  3. Exit                        *\n"
+                + "***********************************\n");
             try {
                 input = br.readLine();
             } catch (IOException ioe) {
