@@ -27,5 +27,5 @@ Like last week, the beginning of the week was quite slow and I got around to wor
 * Write tests
 * Get JaCoCo working
 
-Time used this week: 13-14h
+Time used this week: 13-15h / 
 [Link to timekeeping table](../timekeeping.md)
