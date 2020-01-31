@@ -44,11 +44,58 @@ public class MazeFactory {
                 } else if(col == height-1 && isPath(mazeImage, row, col)) {
                     Node end = new Node(false, true, row, col);
                     helper.push(end);
+                // All other nodes
+                } else {
+                    Node newNode = considerNodePlacement(mazeImage, row, col);
+                    if (newNode != null) {
+                        helper.push(newNode);
+                    } 
                 }
+                
+                /*
+                    TODO
+                    - Connect the nodes
+                    - Performance
+                    - Refactor class as a Maze object
+                */
             }
         }
 
         return new Node(false, false, 0, 0);
+    }
+    
+    /**
+     * A method that checks a space in the maze, if it is suitable for a node.
+     * These spaces are generally beginnings and ends of corridors and junctions
+     * This should drastically reduce the amount of 'unnecessary' nodes created.
+     * 
+     * @param image BufferedImage; The maze image
+     * @param x int; Position on the row
+     * @param y int; Position in the column
+     * @return Node; The node that is to be added, or null if its no place for a node
+     */
+    private Node considerNodePlacement(BufferedImage image, int x, int y) {
+        // Standing on a wall
+        if (!isPath(image, x, y)) {
+            return null;
+        }
+        if (!isJunction(image, x, y)) {
+            return null;
+        }
+        
+        // Creates a node if the space under investigation is not a wall
+        // and not in the middle of a corridor
+        return new Node(false, false, x, y);
+    }
+    
+    private boolean isJunction(BufferedImage image, int x, int y) {
+        if (!isPath(image, x+1, y) && !isPath(image, x-1, y)) {
+            return false;
+        } else if (!isPath(image, x, y+1) && !isPath(image, x, y-1)) {
+            return false;
+        }
+        
+        return true;
     }
     
     private boolean isPath(BufferedImage image, int x, int y) {
