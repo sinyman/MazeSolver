@@ -9,3 +9,5 @@ This will be used to keep track of my time spent on the project
 |17.1|Updated document and directory structure                       |    6h   |
 |23.1|Clearing upp project structure and scope                       |    1h   |
 |24.1|Mostly reading up on tools, but also documentationand plugins  |    5h   |
+|30.1|Working out how to implement the algorithms on a graph         |    2h   |
+|31.1|Mostly reading up on tools, but also documentationand plugins  |   11h   |
