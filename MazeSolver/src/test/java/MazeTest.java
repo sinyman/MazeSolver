@@ -1,7 +1,7 @@
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import inputOutput.MazeFactory;
+import algoritmsAndDatastructures.Maze;
 /**
  * Class that contains the tests for the Maze I/O.
  * @author Simon Nyman

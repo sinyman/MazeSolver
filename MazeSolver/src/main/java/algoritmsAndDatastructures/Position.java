@@ -8,8 +8,8 @@ package algoritmsAndDatastructures;
  * @author Simon Nyman
  */
 public class Position {
-    int xCord;
-    int yCord;
+    private int xCord;
+    private int yCord;
     
     /**
      * Constructor.
@@ -28,5 +28,9 @@ public class Position {
 
     public int getY() {
         return yCord;
+    }
+    
+    public String toString() {
+        return "("+xCord+","+yCord+")";
     }
 }

@@ -2,11 +2,11 @@
 package algoritmsAndDatastructures;
 
 /**
- * Classic Stack datastructure
+ * Classic Stack data structure.
  * @author Simon
  */
 public class Stack {
-    private Node[] stack;
+    private Position[] stack;
     private int top;
     
     /**
@@ -14,21 +14,21 @@ public class Stack {
      * Initializes a new Stack-object with 10 empty spots
     */
     public Stack() {
-        this.stack = new Node[10];
+        this.stack = new Position[10];
         top = -1;
     }
     
     /**
      * <b>Push a new object into the stack</b>
-     * @param newNode The node to be added to the stack
+     * @param newPos The position to be added to the stack
      * @return Boolean value based on whether the action was successful or not
      */
-    public boolean push(final Node newNode) {
+    public boolean push(final Position newPos) {
         boolean con = true;
         while(con) {
             try {
                 top++;
-                stack[top] = newNode;
+                stack[top] = newPos;
                 
                 // Stops the looping after stack has been extended
                 con = false;
@@ -44,10 +44,10 @@ public class Stack {
     
     /**
      * <b>Removes the topmost node and returns it</b>
-     * @return Node, null if stack is empty
+     * @return Position, null if stack is empty
      */
-    public Node pop() {
-        Node toReturn = stack[top];
+    public Position pop() {
+        Position toReturn = stack[top];
         stack[top] = null;
         // Resetting top index to new top
         top--;
@@ -56,15 +56,15 @@ public class Stack {
     
     /**
      * <b>Check the object at the top of the stack</b>
-     * @return Node, null if stack is empty
+     * @return Position, null if stack is empty
      */
-    public Node peek() {
+    public Position peek() {
         return stack[top];
     }
     
     /**
      * <b>Returns the amount of elements in stack</b>
-     * @return int
+     * @return int; The amount of objects in stack
      */
     public int size() {
         // Returns top+1 because stack indices start from 0
@@ -80,7 +80,7 @@ public class Stack {
     }
     
     private void extendStack(int amount) {
-        Node[] newStack = new Node[stack.length + amount];
+        Position[] newStack = new Position[stack.length + amount];
         for (int i = 0; i < stack.length; i++) {
             newStack[i] = stack[i];
         }
