@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import inputOutput.MazeFactory;
 /**
  * Class that contains the tests for the Maze I/O.
- * @author cherry
+ * @author Simon Nyman
  */
 public class MazeTest {
     

@@ -178,7 +178,7 @@ public class MazeFactory {
      */
     public boolean writeMaze(final BufferedImage maze, final String fname) {
         try {
-            if (ImageIO.write(maze, "bmp", new File(baseURL + "./" + fname
+            if (ImageIO.write(maze, "bmp", new File(baseURL + fname
                     + ".bmp"))) {
                 System.out.println(">>>ImageWRITE successful");
                 return true;
