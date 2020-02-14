@@ -13,3 +13,4 @@ This will be used to keep track of my time spent on the project
 |31.1|Mostly reading up on tools, but also documentationand plugins  |   11h   |
 |7.2|Restructure of project, Wallfollower algorithm                  |    8h   |
 |12.2|Peer review 1                                                  |    2h   |
+||<b>TOTAL</b>|<b>39h</b>|
