@@ -42,9 +42,12 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.5</version>
+                <version>0.8.5</version> 
                 <configuration>
                     <argLine>${argLine} --enable-preview</argLine>
+                    <excludes>
+                        <exclude>**/*MazeSolver.class</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
@@ -66,6 +69,22 @@
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>1.1.8</version>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>mazesolver.sinyman.mazesolver.MazeSolver</mainClass>
+                </configuration>
             </plugin>
 
         </plugins>
