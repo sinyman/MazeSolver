@@ -28,8 +28,8 @@ public class Wallfollower {
        return traverseRightHand(maze.getMaze(), startX, 0, route); 
     }
     
-    public Stack traverseRightHand(String[][] maze, int x, int y, Stack route) {
-        route.push(new Position(x, y));
+    private Stack traverseRightHand(String[][] maze, int x, int y, Stack route) {
+        route.push(new MazePos(x, y));
         if(maze[x][y] == "G") {
             return route;
         }
@@ -46,17 +46,17 @@ public class Wallfollower {
         return route;
     }  
     
-    public Stack traverseLeftHand(String[][] maze, int x, int y, Stack route) {
-        route.push(new Position(x, y));
+    private Stack traverseLeftHand(String[][] maze, int x, int y, Stack route) {
+        route.push(new MazePos(x, y));
         if(maze[x][y] == "G") {
             return route;
         }
         if(isFree(maze, x + 1, y)) {
-            traverseRightHand(maze, x + 1, y, route);
+            traverseLeftHand(maze, x + 1, y, route);
         } else if (isFree(maze,x, y + 1)) {
-            traverseRightHand(maze, x, y + 1, route);
+            traverseLeftHand(maze, x, y + 1, route);
         } else if (isFree(maze, x - 1, y)) {
-            traverseRightHand(maze, x - 1, y, route);
+            traverseLeftHand(maze, x - 1, y, route);
         } else {
             return route;
         }

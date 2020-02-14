@@ -7,7 +7,7 @@ package algoritmsAndDatastructures;
  * algorithms more logical and "clean".
  * @author Simon Nyman
  */
-public class Position {
+public class MazePos {
     private int xCord;
     private int yCord;
     
@@ -17,7 +17,7 @@ public class Position {
      * @param x int; The x-position of the element
      * @param y int; The y-position of the element 
      */
-    public Position(int x, int y) {
+    public MazePos(int x, int y) {
         this.xCord = x;
         this.yCord = y;
     }

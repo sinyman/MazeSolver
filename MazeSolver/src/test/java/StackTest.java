@@ -2,6 +2,7 @@
 import static org.junit.Assert.assertTrue;
 import org.junit.*;
 import algoritmsAndDatastructures.Stack;
+import algoritmsAndDatastructures.MazePos;
 
 /**
  * Class that contains the tests for the Stack data structure.
@@ -9,10 +10,16 @@ import algoritmsAndDatastructures.Stack;
  */
 public class StackTest {
     Stack stack;
+    MazePos pos1;
+    MazePos pos2;
+    MazePos pos3;
     
     @Before
     public void setup() {
         stack = new Stack();
+        pos1 = new MazePos(0,0);
+        pos2 = new MazePos(1,2);
+        pos3 = new MazePos(3,4);
     }
 
     @Test
@@ -27,6 +34,12 @@ public class StackTest {
     
     @Test
     public void insertionWorks() {
-        // TODO implement
+        final int SIZE_BEFORE = stack.size();
+        
+        stack.push(pos1);
+        
+        assertTrue(SIZE_BEFORE + 1 == stack.size()
+                    && stack.pop() == pos1
+                );
     }
 }

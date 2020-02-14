@@ -6,7 +6,7 @@ package algoritmsAndDatastructures;
  * @author Simon
  */
 public class Stack {
-    private Position[] stack;
+    private MazePos[] stack;
     private int top;
     
     /**
@@ -14,7 +14,7 @@ public class Stack {
      * Initializes a new Stack-object with 10 empty spots
     */
     public Stack() {
-        this.stack = new Position[10];
+        this.stack = new MazePos[10];
         top = -1;
     }
     
@@ -23,7 +23,7 @@ public class Stack {
      * @param newPos The position to be added to the stack
      * @return Boolean value based on whether the action was successful or not
      */
-    public boolean push(final Position newPos) {
+    public boolean push(final MazePos newPos) {
         boolean con = true;
         while(con) {
             try {
@@ -46,8 +46,8 @@ public class Stack {
      * <b>Removes the topmost node and returns it</b>
      * @return Position, null if stack is empty
      */
-    public Position pop() {
-        Position toReturn = stack[top];
+    public MazePos pop() {
+        MazePos toReturn = stack[top];
         stack[top] = null;
         // Resetting top index to new top
         top--;
@@ -58,7 +58,7 @@ public class Stack {
      * <b>Check the object at the top of the stack</b>
      * @return Position, null if stack is empty
      */
-    public Position peek() {
+    public MazePos peek() {
         return stack[top];
     }
     
@@ -80,7 +80,7 @@ public class Stack {
     }
     
     private void extendStack(int amount) {
-        Position[] newStack = new Position[stack.length + amount];
+        MazePos[] newStack = new MazePos[stack.length + amount];
         for (int i = 0; i < stack.length; i++) {
             newStack[i] = stack[i];
         }

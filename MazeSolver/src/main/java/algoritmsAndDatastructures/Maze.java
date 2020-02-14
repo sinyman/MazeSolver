@@ -15,7 +15,7 @@ public class Maze {
     final private String baseURL = "./";
     final private BufferedImage mazeImage;
     private String[][] maze;
-    private Position start;
+    private MazePos start;
     private int dimensionX;
     private int dimensionY;
     
@@ -92,7 +92,7 @@ public class Maze {
             final int y) {
         // This is the starting space
         if (isPath(mazeImage, x, y) && y == 0) {
-            this.start = new Position(x, y);
+            this.start = new MazePos(x, y);
             return "@";
         // It's the goal
         } else if (isPath(mazeImage, x, y) && y == mazeImage.getHeight() - 1) {
@@ -151,6 +151,7 @@ public class Maze {
      * @return String; A graphic representation of the maze in the form of a
      * string.
      */
+    @Override
     public String toString() {
         String toReturn = "";
         for(String[] array : maze) {
@@ -163,7 +164,7 @@ public class Maze {
         return toReturn;
     }
 
-    public Position getStart() {
+    public MazePos getStart() {
         return start;
     }
 
