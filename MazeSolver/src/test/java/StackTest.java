@@ -10,16 +10,13 @@ import algoritmsAndDatastructures.MazePos;
  */
 public class StackTest {
     Stack stack;
-    MazePos pos1;
-    MazePos pos2;
-    MazePos pos3;
+    MazePos pos1 = new MazePos(0,0);
+    MazePos pos2 = new MazePos(1,2);
+    MazePos pos3 = new MazePos(3,4);
     
     @Before
     public void setup() {
         stack = new Stack();
-        pos1 = new MazePos(0,0);
-        pos2 = new MazePos(1,2);
-        pos3 = new MazePos(3,4);
     }
 
     @Test
@@ -41,5 +38,27 @@ public class StackTest {
         assertTrue(SIZE_BEFORE + 1 == stack.size()
                     && stack.pop() == pos1
                 );
+    }
+    
+    @Test
+    public void peekWorks() {
+        boolean rightElement = false;
+        stack.push(pos1);
+        stack.push(pos2);
+        
+        rightElement = stack.peek() == pos2;
+        stack.pop();
+        rightElement = stack.peek() == pos1;
+        
+        assertTrue(rightElement);
+    }
+    
+    @Test
+    public void stackExtendingWorks() {
+        for(int i = 0; i < 15; i++) {
+            stack.push(new MazePos(3,3));
+        }
+        
+        assertTrue(stack.size() > 10);
     }
 }
