@@ -156,7 +156,7 @@ public class Maze {
         String toReturn = "";
         for(String[] array : maze) {
             for(String s : array) {
-                toReturn = toReturn + s + " ";
+                toReturn = toReturn + s;
             }
             toReturn = toReturn + "\n";
         }

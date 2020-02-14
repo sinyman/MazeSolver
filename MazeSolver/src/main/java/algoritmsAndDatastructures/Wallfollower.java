@@ -3,21 +3,26 @@ package algoritmsAndDatastructures;
 
 /**
  * Wallfollower algorithm for maze solving.
- * @author Simon
+ * @author Simon Nyman
  */
 public class Wallfollower {
     
     /**
      * Solve a said maze.
      * @param maze Node; The maze as an array of strings.
+     * @param choice int; Which version to use; 0 = right-hand, 1 = left-hand.
      * @return Stack<MazePos>; A stack of containing objects of the paths to
      * the exit.
      */
-    public Stack solve(Maze maze) {
+    public Stack solve(Maze maze, int choice) {
         Stack route = new Stack();
         int startX = maze.getStart().getX();
         
-       return traverseRightHand(maze.getMaze(), startX, 0, route); 
+        if (choice == 0) {
+            return traverseRightHand(maze.getMaze(), startX, 0, route);
+        }
+        
+       return traverseLeftHand(maze.getMaze(), startX, 0, route); 
     }
     
     private Stack traverseRightHand(String[][] maze, int x, int y, Stack route) {
