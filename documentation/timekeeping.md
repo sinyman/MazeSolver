@@ -12,3 +12,4 @@ This will be used to keep track of my time spent on the project
 |30.1|Working out how to implement the algorithms on a graph         |    2h   |
 |31.1|Mostly reading up on tools, but also documentationand plugins  |   11h   |
 |7.2|Restructure of project, Wallfollower algorithm                  |    8h   |
+|12.2|Peer review 1                                                  |    2h   |
