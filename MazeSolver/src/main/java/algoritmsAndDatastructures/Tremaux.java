@@ -36,7 +36,7 @@ public class Tremaux {
     private void traverse(int x, int y) {
         // Standing on goal space
         if(isGoal(x, y)) {
-            markRoute();
+            drawRoute();
             
         } else {
             // Is a junction
@@ -78,12 +78,8 @@ public class Tremaux {
         
     }
     
-    private void markRoute() {
-        for(String[] row : maze) {
-            for(String col : row) {
-                
-            }
-        }
+    private void drawRoute() {
+        
     }
         
     private boolean isGoal(int x, int y) {
